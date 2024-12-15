@@ -15,10 +15,10 @@ function createPromptCard() {
     const promptCard = document.createElement('div');
     promptCard.className = 'prompt-card';
     const span = document.createElement('span');
+    span.innerHTML = $prompt.value;
     promptCard.appendChild(span);
     $chatbox.appendChild(promptCard);
     $prompt.value = '';
-    
 }
 
 function createResponseCard() {
